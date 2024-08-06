@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'FS Me';
+    src: url('fonts/FSMeWeb-Regular_rcfffc.woff2') format('woff2'),
+         url('fonts/FSMeWeb-Regular_rcfffc.woff') format('woff'),
+         url('fonts/FSMeWeb-Regular_rcfffc.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'FS Me', sans-serif; /* Include a fallback font */
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.image-box {
+    background-image: url('/images/WhereYourMoneyGoes-Desktop.png');
+    height: 100vh;
+    background-size: cover; /* Ensures the background image covers the container */
+    background-position: center; /* Center the background image */
+    width: 100%; /* Full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-container {
+    height: auto;
+    width: 440px;
+    background-color: white;
+    position: absolute;
+    bottom: 110px;
+    right: 90px;
+    justify-content: center;
+    border-radius: 1%;
+}
+
+.inner-container {
+    text-align: justify;
+    padding: 30px;
+}
+
+h4 {
+    font-size: 28px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+h6 { 
+    font-size: 13px;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.first-button,
+.second-button {
+    color: white;
+    font-size: medium;
+    width: 185px;
+    height: 48px;
+    border-radius: 5px;
+    text-align: center;
+    border: 0;
+    margin-top: 10px; /* Added margin-top for spacing */
+}
+
+.first-button {
+    background: #6F3F87;
+}
+
+.second-button {
+    background: #173145;
+}
+
+h5 {
+    font-size: 14px;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.paragraph {
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 18px;
+    text-align: left;
+}
+
+.hide {
+    display: none;
+}
+
+#firstBox, #secondBox {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+#firstBox {
+    background: #6F3F87;
+}
+
+#secondBox {
+    background: #173145;
+}
+@media screen and (max-width: 1030px) {
+    .flex-container {
+        width: 450px;
+        bottom: 10px;
+        right: 12px;
+        padding: 20px;
+        position: absolute;
+        border-radius: 1%;
+    }
+
+    .image-box {
+        background-image: url('/images/WhereYourMoneyGoes-Desktop.png');
+        background-size: cover;
+        background-position: center;
+        height: 600px; /* Fixed height for tablets */
+    }
+
+    .first-button, .second-button {
+        width: 185px;
+    }
+}
+/* Media Query for Screens up to 950px Wide */
+@media screen and (max-width: 950px) {
+    .flex-container {
+        width: 350px;
+        bottom: 10px;
+        right: 12px;
+        padding: 20px;
+        position: absolute;
+        border-radius: 1%; 
+        background-color: white;
+    }
+
+    .image-box {
+        background-image: url('/images/WhereYourMoneyGoes-Desktop.png');
+        background-size: cover;
+        background-position: center;
+        height: 600px; /* Fixed height for tablets */
+    }
+
+    .first-button, .second-button {
+        width: 130px;
+    }
+}
+
+/* Media Query for Screens up to 800px Wide */
+@media screen and (max-width: 800px) {
+    .flex-container {
+        width: 350px;
+        bottom: 10px;
+        right: 12px;
+        padding: 20px;
+        position: absolute;
+        border-radius: 1%;
+        margin: 0%;
+        background-color: white;
+    }
+
+    .image-box {
+        background-image: url('/images/WhereYourMoneyGoes-Desktop.png');
+        background-size: cover;
+        background-position: center;
+        height: 600px; /* Fixed height for tablets */
+    }
+
+    .first-button, .second-button {
+        width: 130px;
+    }
+}
+
+/* Media Query for Screens up to 360px Wide */
+@media screen and (max-width: 500px) {
+    .flex-container {
+        width: 330px;
+        bottom: 10px;
+        right: 18px;
+        padding: 5%;
+        position: absolute;
+        margin: 0%;
+        background-color: #D5995F;
+        
+    }
+   .inner-container{
+    background-color: white;
+    border-radius: 1%;
+  
+   }
+    .image-box {
+        background-image: url('/images/WhereYourMoneyGoes-Mobile.png');
+        background-size: cover;
+        background-position: center;
+        height: 890px; /* 60% of viewport height for mobile */
+        width: 100%; /* Full width */
+        top:0;
+      
+      
+    }
+
+    .first-button, .second-button {
+        width: 120px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .flex-container {
+        width: 335px;
+        bottom: 10px;
+        right: 10px;
+        padding: 15px 12px;
+        position: absolute;    
+        margin: 0%;
+        background-color: #D5995F;
+        
+    }
+   .inner-container{
+    background-color: white;
+  
+   }
+    .image-box {
+        background-image: url('/images/WhereYourMoneyGoes-Mobile.png');
+        background-size: cover;
+        background-position: center;
+        height: 890px; /* 60% of viewport height for mobile */
+        width: 100%; /* Full width */
+        top:0;
+     
+      
+    }
+
+    .first-button, .second-button {
+        width: 125px;
+    }
+}
+
