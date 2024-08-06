@@ -53,6 +53,15 @@ h4 {
     padding: 0;
     margin: 0;
 }
+hr{
+    width : 10%;
+    
+    border-left: 2px solid #008CAA;
+    height: 3px;
+    margin-left: 0px
+    
+
+}
 
 h6 { 
     font-size: 13px;
